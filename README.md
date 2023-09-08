@@ -1,17 +1,18 @@
----
-title: "kodict"
----
-
-<img src="./cha-sq.jpg" alt="Cha Series by Coffeebank: A delightfully refreshing Discord bot" class="h-24 aspect-square rounded mb-2" />
+<img src="./cha-sq.jpg" alt="Cha Series by Coffeebank: A delightfully refreshing Discord bot" width="64" />
 
 # 🍵 차 Cha for Korean
 
 <p class="text-3xl pt-0 mt-0">A delightfully refreshing Discord bot for searching and translating Korean.</p>
 
-<component-coghero cog="kodict" desc="Korean dictionary bot. Searches National Institute of Korean Language's Korean-English Learners' Dictionary (한국어기초사전) using their Open API."></component-coghero>
+[![Add to Discord](https://img.shields.io/badge/Add%20to%20Discord-▸-5865F2?style=for-the-badge&logo=discord&logoColor=white&logoWidth=25)](https://thymedev.github.io/invite/chako) [![Read Documentation](https://img.shields.io/badge/Read%20Documentation-▸-199966?style=for-the-badge&logo=gitbook&logoColor=white&logoWidth=25)](https://thymedev.github.io/docs/cha/ko)
 
-![Kodict: A Korean dictionary entry for 신문 (sinmun, newspaper)](./kodict-example.png)
+<br />
 
+[![A Korean dictionary entry for 신문 (sinmun, newspaper)](./kodict-example.png)](https://thymedev.github.io/invite/chako)
+
+Korean dictionary bot. Searches National Institute of Korean Language's Korean-English Learners' Dictionary (한국어기초사전), translates Korean using DeepL, and resources including Wiktionary, Google Translate, and romanization.
+
+<br />
 
 ## About
 
@@ -22,19 +23,6 @@ Korean, with its unique alphabet, is a fascinating language that draws learners 
 **CHA-KO** is a unified turnkey solution for searching dictionary sources, displaying Hangul Romanization, word definitions/origins, and links to relevant external sources.
 
 **CHA-KO** uses data from public sources including the National Institute of Korean Language's [Korean-English Basic Learners' Dictionary](https://krdict.korean.go.kr/mainAction).
-
-
-## Getting Started
-
-[Public bot (free), hosted by Thyme Dev >](https://thymedev.github.io/docs/cha/ko)
-
-You can also [self-host this bot](/start) or [join the Discord](https://coffeebank.github.io/discord) for updates and news!
-
-(Docs coming soon)
-
-https://krdict.korean.go.kr/openApi/openApiInfo
-
-`[p]set api krdict api_key,YOURAPIKEYHERE`
 
 
 ## Features
@@ -48,9 +36,20 @@ https://krdict.korean.go.kr/openApi/openApiInfo
 
 ## Commands
 
-- `[p]kodict` : Searches Korean dictionary
-- `[p]kosearch` : Searches Korean translation services
-<br /><br />
+This bot uses slash commands.
+
+- `/kodict` : Searches Korean dictionary
+- `/kosearch` : Searches Korean translation services
+
+
+This bot also supports a ping as a prefix: `@Cha for Korean `  
+*For example: `@Cha for Korean kodict 신문`*
+
+<br />
+
+## Getting Started
+
+[![Add to Discord](https://img.shields.io/badge/Add%20to%20Discord-▸-5865F2?style=for-the-badge&logo=discord&logoColor=white&logoWidth=25)](https://thymedev.github.io/invite/chako) [![Read Documentation](https://img.shields.io/badge/Read%20Documentation-▸-199966?style=for-the-badge&logo=gitbook&logoColor=white&logoWidth=25)](https://thymedev.github.io/docs/cha/ko)
 
 ## Install
 
@@ -63,6 +62,10 @@ Clone or download this project.
 Make an `.env` file, and:
 - Add your bot's token to `dpy_token`
 - Add your bot's User ID to `dpy_user_id`
+- `krdict_api_key`: Optional
+  - https://krdict.korean.go.kr/openApi/openApiInfo
+- `deepl_api_key`: Optional
+  - https://www.deepl.com/pro-api
 
 The bot prefix is @ping or Slash command.
 
