@@ -1,24 +1,62 @@
-# coffee-dpy ☕
+---
+title: "kodict"
+---
 
-## 📦 A drop-in Discord.py wrapper for Red-DiscordBot cogs.
+<img src="./cha-sq.jpg" alt="Cha Series by Coffeebank: A delightfully refreshing Discord bot" class="h-24 aspect-square rounded mb-2" />
 
-Coffee-dpy lets you run cogs built for [Red-DiscordBot](https://github.com/Cog-Creators/Red-DiscordBot/) independently with only [Discord.py](https://github.com/Rapptz/discord.py).
+# 🍵 차 Cha for Korean
 
-This wrapper aims to be a simple, lightweight, and portable way to package and redistribute Red cogs easily for use, with minimal changes to Red cogs when possible.
+<p class="text-3xl pt-0 mt-0">A delightfully refreshing Discord bot for searching and translating Korean.</p>
 
-Discord intents are not required by default.
+<component-coghero cog="kodict" desc="Korean dictionary bot. Searches National Institute of Korean Language's Korean-English Learners' Dictionary (한국어기초사전) using their Open API."></component-coghero>
 
-
-## Alpha Release
-
-This project is still in alpha stage development, and may not work with all cogs. Contributions are welcome.
+![Kodict: A Korean dictionary entry for 신문 (sinmun, newspaper)](./kodict-example.png)
 
 
-## Usage
+## About
 
-### Step 1: Add your cogs
+**CHA-KO is the Korean Discord bot that delivers language and dictionary information to students, travelers, and kpop/kdrama enthusiasts alike.**
 
-Clone this project. Then, create a new `cogs` folder and place your Red cogs inside.
+Korean, with its unique alphabet, is a fascinating language that draws learners from around the world. However, the journey to fluency can be challenging. Learners often struggle with understanding the language's structure, pronunciation, Hanja, and the cultural nuances inherent to Korean.
+
+**CHA-KO** is a unified turnkey solution for searching dictionary sources, displaying Hangul Romanization, word definitions/origins, and links to relevant external sources.
+
+**CHA-KO** uses data from public sources including the National Institute of Korean Language's [Korean-English Basic Learners' Dictionary](https://krdict.korean.go.kr/mainAction).
+
+
+## Getting Started
+
+[Public bot (free), hosted by Thyme Dev >](https://thymedev.github.io/docs/cha/ko)
+
+You can also [self-host this bot](/start) or [join the Discord](https://coffeebank.github.io/discord) for updates and news!
+
+(Docs coming soon)
+
+https://krdict.korean.go.kr/openApi/openApiInfo
+
+`[p]set api krdict api_key,YOURAPIKEYHERE`
+
+
+## Features
+
+- Search dictionary entries in Korean (Hangul, Hanja)
+- Search dictionary entries in English
+- Pronunciation in Hangul and Romanization
+- Word origins in Hanja
+- Parts of speech
+
+
+## Commands
+
+- `[p]kodict` : Searches Korean dictionary
+- `[p]kosearch` : Searches Korean translation services
+<br /><br />
+
+## Install
+
+### Step 1: Download
+
+Clone or download this project.
 
 ### Step 2: Add your Discord Bot info
 
@@ -43,3 +81,8 @@ In the future, you can run your bot anytime using
 source ~/dpyenv/bin/activate
 python3 -m main
 ```
+
+
+## Support
+
+[Join the Discord >](https://coffeebank.github.io/discord)
